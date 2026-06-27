@@ -1,0 +1,21 @@
+# Data collection
+biopython>=1.83          # Bio.Entrez — PubMed API client
+tqdm>=4.66
+
+# Processing & analysis
+pandas>=2.0
+numpy>=1.24
+
+# Retrieval & embeddings
+sentence-transformers>=2.7   # PubMedBERT embedding model
+chromadb>=0.5                # vector store (HNSW, cosine)
+
+# Generation
+requests>=2.31               # talks to a local Ollama server
+
+# Notebook UI
+ipywidgets>=8.0
+notebook>=7.0
+
+# NOTE: generation also requires a local Ollama server (https://ollama.com)
+#   ollama pull llama3.2:3b
